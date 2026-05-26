@@ -1,14 +1,44 @@
-# astrbot-plugin-helloworld
+# astrbot_plugin_zm
 
-AstrBot 插件模板 / A template plugin for AstrBot plugin feature
+造梦小助手 - AstrBot 插件，提供造梦相关的攻略图查询。
 
-> [!NOTE]
-> This repo is just a template of [AstrBot](https://github.com/AstrBotDevs/AstrBot) Plugin.
-> 
-> [AstrBot](https://github.com/AstrBotDevs/AstrBot) is an agentic assistant for both personal and group conversations. It can be deployed across dozens of mainstream instant messaging platforms, including QQ, Telegram, Feishu, DingTalk, Slack, LINE, Discord, Matrix, etc. In addition, it provides a reliable and extensible conversational AI infrastructure for individuals, developers, and teams. Whether you need a personal AI companion, an intelligent customer support agent, an automation assistant, or an enterprise knowledge base, AstrBot enables you to quickly build AI applications directly within your existing messaging workflows.
+## 功能
 
-# Supports
+发送指令快速查看对应的攻略图片，支持菜单查询、大小写不敏感匹配。
 
-- [AstrBot Repo](https://github.com/AstrBotDevs/AstrBot)
-- [AstrBot Plugin Development Docs (Chinese)](https://docs.astrbot.app/dev/star/plugin-new.html)
-- [AstrBot Plugin Development Docs (English)](https://docs.astrbot.app/en/dev/star/plugin-new.html)
+## 安装
+
+AstrBot插件市场中安装。
+
+## 使用方法
+
+| 指令 | 说明 |
+|------|------|
+| `/zm 菜单` | 查看所有可用指令 |
+| `/zm 宠物装备升级` | 查看宠物装备升级攻略 |
+| `/zm 宠物装备属性` | 查看宠物装备属性 |
+| `/zm 灯谜` | 查看灯谜攻略 |
+| `/zm 法宝进阶` | 查看法宝进阶攻略 |
+| `/zm 技能耗蓝` | 查看技能耗蓝表 |
+| `/zm 剑阵` | 查看剑阵攻略 |
+| `/zm 熔戒合成` | 查看熔戒合成表 |
+| `/zm 生存大冒险` | 查看生存大冒险攻略 |
+| `/zm 头衔大全` | 查看头衔大全 |
+| `/zm 装备强化` | 查看装备强化攻略 |
+| `/zm 坐骑装备` | 查看坐骑装备攻略 |
+| `/zm BOSS掉落` | 查看 BOSS 掉落表 |
+| `/zm BOSS属性` | 查看 BOSS 属性表 |
+
+支持别名：`/zm 帮助`、`/zm menu`、`/zm help` 都能查看菜单。
+
+## 贡献
+
+如果你有更好的攻略图，欢迎提 Issue 或 PR。
+
+## 作者
+
+yuki
+
+## 版本
+
+v1.1
