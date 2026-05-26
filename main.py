@@ -13,7 +13,7 @@ class MyPlugin(Star):
     "法宝进阶": "法宝进阶.jpg",
     "技能耗蓝": "技能耗蓝.png",
     "剑阵": "剑阵.jpg",
-    "熔戒合成": "熔戒合成.jpg",
+    "煞戒合成": "煞戒合成.jpg",
     "生存大冒险": "生存大冒险.jpg",
     "头衔大全": "头衔大全.jpg",
     "装备强化": "装备强化.jpg",
@@ -30,16 +30,6 @@ class MyPlugin(Star):
 
     async def initialize(self):
         """可选择实现异步的插件初始化方法，当实例化该插件类之后会自动调用该方法。"""
-
-    # # 注册指令的装饰器。指令名为 helloworld。注册成功后，发送 `/helloworld` 就会触发这个指令，并回复 `你好, {user_name}!`
-    # @filter.command("helloworld")
-    # async def helloworld(self, event: AstrMessageEvent):
-    #     """这是一个 hello world 指令""" # 这是 handler 的描述，将会被解析方便用户了解插件内容。建议填写。
-    #     user_name = event.get_sender_name()
-    #     message_str = event.message_str # 用户发的纯文本消息字符串
-    #     message_chain = event.get_messages() # 用户所发的消息的消息链 # from astrbot.api.message_components import *
-    #     logger.info(message_chain)
-    #     yield event.plain_result(f"Hello, {user_name}, 你发了 {message_str}!") # 发送一条纯文本消息
 
     @filter.command("zm") 
     async def strategy(self, event: AstrMessageEvent, opt: str = "菜单"): 
@@ -60,7 +50,7 @@ class MyPlugin(Star):
         real_key = self._lookup.get(opt.lower()) 
         if real_key is not None: 
             # plugin_dir = os.path.dirname(__file__) 
-            img_path = os.path.join(self.plugin_dir, "images", self._lookup[opt]) 
+            img_path = os.path.join(self.plugin_dir, "images", self.IMAGE_MAP[real_key]) 
 
             if not os.path.exists(img_path): 
                 logger.error(f"图片不存在: {img_path}") 
